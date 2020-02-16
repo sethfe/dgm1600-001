@@ -46,6 +46,55 @@ h1,h3 {
     justify-content: space-evenly;
 }
 
-i {
-    width: 60px;
+#contact {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  width: 100%;
+  flex-wrap: wrap;
 }
+
+a {
+  text-decoration: none;
+}
+
+#contact a {
+    margin: 1rem;
+}
+
+i {
+    font-size: 2rem; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 60px;
+    background-color: darkcyan;
+    color: #fff;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 50%;
+    }
+  }
+
