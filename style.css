@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-color: cadetblue; 
+    background-color: #383838; 
     position: fixed;
 }
 
@@ -26,12 +26,12 @@
     font-size: 2rem;
     padding: 2rem;
     text-decoration: none;
-    text-shadow: 2px 2px 1px rgb(109, 25, 25);
+    text-shadow: 2px 2px 1px #383838;
     color: #fff;
 }
 
 .nav-list a:hover {
-  background: rgb(67, 147, 150);
+  background: #d55534;
 }
 
 #welcome-section {
@@ -41,29 +41,30 @@ display: flex;
  align-items: center;
  width: 100%;
  height: 100vh;
- background-color: #a9f1df;
- background-blend-mode: darken, luminosity ;
+ background-color: #d55534;
+ background-blend-mode: soft-light, luminosity;
 }
 
 h1 {
   text-shadow: 2px 2px 1px #000;
-    color: rgb(109, 25, 25);
+    color: #fff0ce;
     font-size: 5rem;
     font-family: 'Raleway', sans-serif;
+    padding-bottom: 6rem;
 }
 
 h2 {
-  color: #fff;
+  color: #fff0ce;
   font-size: 4rem;
   font-family: 'Raleway', sans-serif;
 }
 
 h3 {
-  text-shadow: 2px 2px 1px rgb(109, 25, 25);
+  text-shadow: 2px 2px 1px #000;
   font-size: 3rem;
   font-family: 'Raleway', sans-serif;
   font-style: italic;
-  color: #fff
+  color: #83b4b3;
 }
 
 #project-list {
@@ -81,7 +82,10 @@ h3 {
 
 figcaption  {
 font-family: 'Raleway', sans-serif;
-  color: #fff;
+text-align: center;
+text-decoration-line: underline;
+  color: #fff0ce;
+  font-size: 2rem;
 }
 
 #contact {
@@ -89,12 +93,12 @@ font-family: 'Raleway', sans-serif;
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
-  background-color: cadetblue;
+  background-color: #83b4b3;
 }
 
 .contact-details {
   font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
+  text-shadow: 2px 2px 1px #097392;
   transition: transform 0.3s ease-out;
 }
 
@@ -121,8 +125,8 @@ footer {
     align-items: center;
     font-size: 1.5rem;
     height: 60px;
-    background-color: rgb(80, 83, 83);
-    color: #fff;
+    background-color: #383838;
+    color: #d55534;
 }
 
 
