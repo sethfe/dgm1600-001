@@ -1,0 +1,9 @@
+body {
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+a > img {
+    height: 12rem;
+    margin: 4px; 
+}
