@@ -1,17 +1,18 @@
 import { films } from '../data/films.js'
 import { people } from '../data/people.js'
 
-console.log("Hi There! My first JavaScript code!")
-
-console.log(document.querySelector('.greeting'))
-
-let greetingDiv = document.querySelector('.greeting')
+let gallery = document.querySelector('.gallery')
 
 const maleCharacters = people.filter(person => person.gender === "male") 
 
 const femaleCharacters = people.filter(person => person.gender === "female")
 
-const otherCharacters = people.filter(person => person.gender === "n/a"  || person.gender === "none")
+const otherCharacters = people.filter(
+    person => 
+    person.gender === 'n/a'  || 
+    person.gender === 'none' ||
+    person.gender === 'hermaphrodite' ,
+    )
 
 let maleButton = document.querySelector('#maleButton')
 let femaleButton = document.querySelector('#femaleButton')
@@ -21,10 +22,44 @@ maleButton.addEventListener("click", function (event) {
     populateDOM(maleCharacters)
 })
 
-let counter = 1
+femaleButton.addEventListener("click", function (event) {
+    populateDOM(femaleCharacters)
+})
+
+otherButton.addEventListener("click", function (event) {
+    populateDOM(otherCharacters)
+})
+
+function getLastNumber(url) {
+    let end = url.lastInswxOf('/')
+    let start = end - 2 
+    if (url.charAt(start) === '/') {
+        start++
+    }
+    return url.slice(start, end)
+}
+
+function removeChildren(element) {
+    while (element.fistChild) {
+        element.removeChild(element.firstChild)
+    }
+}
+
 
 function populateDOM(characters) {
-people.forEach(person => {
+    removeChildren(gallery)
+characters.forEach(person => {
+    let imageNum = getLastNumber(person.url)
+    let personAnchor = document.createElement('a')
+    personAnchor.href = '#'
+    let personImg = document.createElement('img')
+    person.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
+
+    personImg.addEventListener('error', event => {
+        personImg.hidden = true
+        //personImg.src = '../images/uvu.jpeg'
+    })
+
 
 let personAnchor = document.createElement("a")
 personAnchor.href = "#"
@@ -43,10 +78,11 @@ personImg.addEventListener("click", function( event ) {
 })
 
 personAnchor.appendChild(personImg)
-greetingDiv.appendChild(personAnchor)
-counter++
+gallery.appendChild(personAnchor)
 })
 }
+
+populateDOM(people)
 
 
 
