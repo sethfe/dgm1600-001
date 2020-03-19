@@ -1,7 +1,5 @@
 import { starships } from '../data/starships.js'
-import {removeChildren} from '../utils.js' 
-
-
+import { removeChildren, getLastNumber } from '../utils.js' 
 
 const nav = document.querySelector('.nav')
 
@@ -11,10 +9,14 @@ const shipView = document.querySelector('#main')
 
 const modalDialog = document.querySelector('.modal')
 const modalButton = document.querySelector('.modal-close')
-const modalBackground =document.querySelector('.modal-background')
+const modalBackground = document.querySelector('.modal-background')
 const modalMessage = document.querySelector('.dialogMessage')
 
 modalButton.addEventListener('click', () => {
+  modalDialog.classList.toggle("is-active")
+})
+
+modalBackground.addEventListener('click', () => {
   modalDialog.classList.toggle("is-active")
 })
 
@@ -49,7 +51,8 @@ function populateShipView(shipData) {
     shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${imageNum}.jpg`
     
     shipImage.addEventListener('error', event => {
-      shipImage.hidden = truemodalDialog.classList.toggle("is-active")
+      shipImage.hidden = true
+      modalDialog.classList.toggle("is-active")
       modalMessage.textContent = `Sorry, could not find an image for ${shipData.name}.`
     })
 
