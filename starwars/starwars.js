@@ -3,16 +3,16 @@ import { people } from '../data/people.js'
 
 let gallery = document.querySelector('.gallery')
 
-const maleCharacters = people.filter(person => person.gender === "male") 
+const maleCharacters = people.filter(person => person.gender === "male")
 
 const femaleCharacters = people.filter(person => person.gender === "female")
 
 const otherCharacters = people.filter(
-    person => 
-    person.gender === 'n/a'  || 
-    person.gender === 'none' ||
-    person.gender === 'hermaphrodite' ,
-    )
+    person =>
+        person.gender === 'n/a' ||
+        person.gender === 'none' ||
+        person.gender === 'hermaphrodite' ,
+)
 
 let maleButton = document.querySelector('#maleButton')
 let femaleButton = document.querySelector('#femaleButton')
@@ -32,7 +32,7 @@ otherButton.addEventListener("click", function (event) {
 
 function getLastNumber(url) {
     let end = url.lastIndexOf('/')
-    let start = end - 2 
+    let start = end - 2
     if (url.charAt(start) === '/') {
         start++
     }
@@ -49,25 +49,25 @@ function removeChildren(element) {
 function populateDOM(characters) {
     removeChildren(gallery)
     characters.forEach(person => {
-     let imageNum = getLastNumber(person.url)
-     let personAnchor = document.createElement('a')
-     personAnchor.href = '#'
-     let personImg = document.createElement('img')
-     person.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
+        let imageNum = getLastNumber(person.url)
+        let personAnchor = document.createElement('a')
+        personAnchor.href = '#'
+        let personImg = document.createElement('img')
+        person.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
 
-    personImg.addEventListener('error', event => {
-        personImg.hidden = true
-        //personImg.src = '../images/uvu.jpeg'
+        personImg.addEventListener('error', event => {
+            personImg.hidden = true
+            //personImg.src = '../images/uvu.jpeg'
+        })
+
+
+        personImg.addEventListener("click", function (event) {
+            console.log('Thanks for clicking!')
+        })
+
+        personAnchor.appendChild(personImg)
+        gallery.appendChild(personAnchor)
     })
-
-
-personImg.addEventListener("click", function( event ) {
-    console.log('Thanks for clicking!')
-})
-
-personAnchor.appendChild(personImg)
-gallery.appendChild(personAnchor)
-})
 }
 
 populateDOM(people)
