@@ -32,7 +32,7 @@ function populateNav(starships) {
           let shipName = event.target.textContent
           const foundShip = starships.find(ship =>
             ship.name === shipName )
-            console.log(doundship)
+            console.log(foundShip)
           populateShipView(foundShip)
       })
 

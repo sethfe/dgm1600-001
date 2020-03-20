@@ -48,12 +48,12 @@ function removeChildren(element) {
 
 function populateDOM(characters) {
     removeChildren(gallery)
-characters.forEach(person => {
-    let imageNum = getLastNumber(person.url)
-    let personAnchor = document.createElement('a')
-    personAnchor.href = '#'
-    let personImg = document.createElement('img')
-    person.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
+    characters.forEach(person => {
+     let imageNum = getLastNumber(person.url)
+     let personAnchor = document.createElement('a')
+     personAnchor.href = '#'
+     let personImg = document.createElement('img')
+     person.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
 
     personImg.addEventListener('error', event => {
         personImg.hidden = true
