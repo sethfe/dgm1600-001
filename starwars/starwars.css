@@ -1,10 +1,10 @@
-body {
+:root {
     box-sizing: border-box;
     background-color: aqua;
 }
 
 a > img {
-    height: 12rem;
+    height: 18rem;
     margin: 4px; 
 }
 
@@ -14,5 +14,5 @@ button {
     font-size: larger;
     background-color: #000;
     color: #a7d;
-    font-weight: 800;
+    font-weight: 600;
 }

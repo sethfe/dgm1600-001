@@ -31,7 +31,7 @@ otherButton.addEventListener("click", function (event) {
 })
 
 function getLastNumber(url) {
-    let end = url.lastInswxOf('/')
+    let end = url.lastIndexOf('/')
     let start = end - 2 
     if (url.charAt(start) === '/') {
         start++
@@ -60,18 +60,6 @@ characters.forEach(person => {
         //personImg.src = '../images/uvu.jpeg'
     })
 
-
-let personAnchor = document.createElement("a")
-personAnchor.href = "#"
-
-let personImg = document.createElement("img")
-personImg.src = `https://starwars-visualguide.com/assets/img/characters/${counter}.jpg`
-
-personImg.addEventListener('error' , (event) => {
-personImg.hidden = true
-//personImg.src = '../images/uvu.jpeg'
-
-})
 
 personImg.addEventListener("click", function( event ) {
     console.log('Thanks for clicking!')
