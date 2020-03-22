@@ -53,7 +53,7 @@ function populateDOM(characters) {
         let personAnchor = document.createElement('a')
         personAnchor.href = '#'
         let personImg = document.createElement('img')
-        person.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
+        personImg.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
 
         personImg.addEventListener('error', event => {
             personImg.hidden = true

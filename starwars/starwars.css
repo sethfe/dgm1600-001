@@ -1,11 +1,13 @@
 :root {
     box-sizing: border-box;
-    background-color: aqua;
+    background-color: #000;
+    color: yellow;
 }
 
 a > img {
     height: 18rem;
     margin: 4px; 
+    
 }
 
 button {
@@ -13,6 +15,6 @@ button {
     border-radius: 10px;
     font-size: larger;
     background-color: #000;
-    color: #a7d;
+    color: yellow;
     font-weight: 600;
 }
