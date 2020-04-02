@@ -1,38 +1,36 @@
 :root {
     box-sizing: border-box;
-    background-color: #000;
-}
-
-header, footer {
+  }
+  
+  header, footer {
     display: flex;
     justify-content: center;
-    background-color: #000;
     color: yellow;
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
-    background-color: #000;
-}
-
-.shipView {
-    
-}
-
-.nav {
-    border: solid 2px black; 
-    padding-right: 1rem; 
-
-}
-
-a {
-text-decoration: none;
-font-size: 1.25rem;
-
-}
-
-li {
-    list-style-type: none;
+    color:yellow;
+  }
+  
+  .shipView {
+  
+  }
+  
+  .nav {
+    border: solid 2px blue;
+    padding: 1rem;
+    background-color: black;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 1.25rem;
     color: yellow;
-}
+  }
+  
+  li {
+    list-style-type: none;
+    
+  }
 

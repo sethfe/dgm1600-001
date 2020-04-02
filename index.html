@@ -1,86 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Seth's Personal Portfolio</title>
-    <script src="https://kit.fontawesome.com/73605dd14a.js" crossorigin="anonymous"></script>
-    <link href="/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <nav id="navbar">
-        <ul class="nav-list">
-            <li>
-                <a href="#welcome-section">About</a>
-            </li>
-            <li>
-                <a href="#welcome-section">Work</a>
-            </li>
-            <li>
-                <a href="#welcome-section">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <section id="welcome-section" class="welcome-section">
-        <h1> Hey, I'm Seth Elliott!</h1>
-        <h3> Web Desinger and Developer</h3>
-    </section>
-    <section id="projects">
-        <h2> My Projects</h2>
-        <div id="project-list">
-            <a href="starwars/starwars.html" target="_blank">
-                <figure class="project-tile">
-                    <img src="/images/vader.jpg" alt="Star Wars Poster" />
-                    <figcaption> My Star Wars Page</figcaption>
-                </figure>
-            </a>
-            <figure class="project-tile">
-                <a href="MyDesigns/MyDesigns.html" target="_blank">
-                <img src="/images/Indian.jpeg" alt="Indian Icon Logo" />
-                <figcaption>My Designs </figcaption>
-            </figure>
-        </a>
-            <figure class="project-tile">
-                <a href="Photography /photography.html" target="_blank">
-                <img src="/images/download.jpg" alt="NYC Icon" />
-                <figcaption>Photography</figcaption>
-            </figure>
-        </a>
-        <figure class="project-tile">
-            <a href="/starships/index.html" target="_blank">
-            <img src="/images/Millenium Falcon.jpeg" alt="Millenium Falcon" />
-            <figcaption>Starships Page</figcaption>
-        </figure>
-    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starships</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="is-size-1">
+      <h1>The Starships of Star Wars</h1>
+    </header>
+    <!-- Brought in this modal from Bulma -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="card">
+          <div class="card-content">
+            <h2 class="dialogMessage is-size-2"></h2>
+          </div>
         </div>
-    </section>
-    <section id="contact" class="contact-section">
-        <div class="contact-links">
-        <a id="profile-link" href="https://github.com/sethfe" target="_blank" class="btn contact-details">
-            <i class="fab fa-github contact-details"> Github</i>
-        </a>
-        <a class="link" href="https://github.com/sethfe" target="_blank" class="btn contact-details">
-            <i class="fab fa-facebook contact-details"> Facebook</i>
-        </a>
-        <a class="link" href="https://github.com/sethfe" target="_blank" class="btn contact-details">
-            <i class="fab fa-linkedin contact-details"> LinkedIn</i>
-        </a>
-        <a class="link" href="https://github.com/sethfe" target="_blank" class="btn contact-details">
-            <i class="fas fa-at contact-details"> Email</i>
-        </a>
-        <a class="link" href="https://github.com/sethfe" target="_blank" class="btn contact-details">
-            <i class="fas fa-mobile-alt contact-details"> Phone</i>
-        </a>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; Thor Anderson Designs, 2020 For Educational Purposes Only</p>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <!-- End modal code, begin my layout-->
+    <div class="container">
+      <nav class="nav">
+        <ul class="navList"></ul>
+      </nav>
+      <main id="main">
+        <div class="shipView"></div>
+      </main>
+    </div>
+    <footer class="is-size-3">
+      <p>&copy; Thor Anderson Designs 2020</p>
     </footer>
-   
-
-</body>
-
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
