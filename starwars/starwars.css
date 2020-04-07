@@ -6,8 +6,11 @@
 
 a > img {
     height: 18rem;
-    margin: 4px; 
-    
+    margin: 4px;  
+}
+
+.gallery {
+    justify-content: space-evenly;
 }
 
 button {
@@ -17,4 +20,11 @@ button {
     background-color: #000;
     color: yellow;
     font-weight: 600;
+    justify-content: space-evenly;
+    
 }
+
+h1, h2 {
+    text-align: center;
+}
+
