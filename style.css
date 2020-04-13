@@ -50,7 +50,7 @@ h1 {
     color: #fff0ce;
     font-size: 5rem;
     font-family: 'Raleway', sans-serif;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -71,15 +71,17 @@ h3 {
 #project-list {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(69, 92, 112);
+    background-color:rgb(69, 92, 112);
 }
 
 .project-section ,h2 {
   text-align: center;
-  background-color: rgb(69, 92, 112);
+  color: #fff0ce;
   padding: 2rem;
-  border-bottom: 0.2rem solid rgb(69, 92, 112);
+  background-color: rgb(69, 92, 112);
+  border-radius: 0.2rem solid rgb(69, 92, 112);
 }
+
 
 figcaption  {
 font-family: 'Raleway', sans-serif;
@@ -97,27 +99,28 @@ text-decoration-line: underline;
   background-color: #83b4b3;
 }
 
-.contact-details {
+.contact {
   font-size: 2.4rem;
   text-shadow: 2px 2px 1px #097392;
   transition: transform 0.3s ease-out;
 }
 
-.contact-details:hover {
-  transform: translateY(8px);
-}
 
 a {
   text-decoration: none;
 }
 
 #contact a {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 i {
     font-size: 2rem; 
     color: #fff;
+}
+
+i:hover {
+  transform: translateY(5px);
 }
 
 footer {
@@ -140,7 +143,7 @@ footer {
   .btn-show-all {
     font-size: 2rem;
     background: var(--main-gray);
-    transition: background 0.3s ease-out;
+    transition: 0.3s ease-out;
   }
   
   .btn-show-all:hover {
