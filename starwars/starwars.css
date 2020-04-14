@@ -48,11 +48,7 @@
       border-color:#fafafa ;
       color: black;
     }
-    #maleButton:active {
-      box-shadow: inset 0px 0px 10px #ffffff;
-      border-color: #fafafa;
-      color: #8ff2ff;
-    }
+    
     #femaleButton {
       border: solid 2px #7b8da5;
       border-radius: 15px 15px 15px 15px;
@@ -63,11 +59,8 @@
       border-color: #fafafa;
       color: black;
     }
-    #femaleButton:active {
-      box-shadow: inset 0px 0px 10px #ffffff;
-      border-color: #fafafa;
-      color: #8ff2ff;
-    }
+ 
+    
     #otherButton {
       border: solid 2px #7b8da5;
       border-radius: 15px 15px 15px 15px;
@@ -78,13 +71,7 @@
       border-color: #fafafa;
       color: black;
     }
-    #otherButton:active {
-      box-shadow: inset 0px 0px 10px #ffffff;
-      border-color: #fafafa;
-      color: #8ff2ff;
-    }
-    
-    
+ 
     .gallery {
       display: flex;
       flex-wrap: wrap;
