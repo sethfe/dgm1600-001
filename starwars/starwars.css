@@ -1,30 +1,105 @@
 :root {
     box-sizing: border-box;
-    background-color: #000;
-    color: yellow;
-}
-
-a > img {
-    height: 18rem;
-    margin: 4px;  
-}
-
-.gallery {
-    justify-content: space-evenly;
-}
-
-button {
-    height: 3rem;
-    border-radius: 10px;
-    font-size: larger;
-    background-color: #000;
-    color: yellow;
-    font-weight: 600;
-    justify-content: space-evenly;
+    background-color: #33342e;
+    }
     
-}
-
-h1, h2 {
+ 
+    
+    h1 {
+    color: #ffde16;
     text-align: center;
-}
+     }
+
+     h2 {
+       color:#fd9014;
+     }
+    
+    body {
+      background-color: #33342e;
+    }
+    
+
+    
+    
+    a> img {
+      height: 18rem;
+      margin: 4px;
+      margin-bottom: 10px;
+      border: solid 4px #285a9f;
+      filter: drop-shadow( .6mm .6mm 0mm #27a1e3);
+    }
+    
+    
+    .nav {
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+    }
+    
+    Button {
+      height: 3rem;
+      font-size: larger;
+      background-color: #e5e9f2;
+      box-shadow: inset 0px 0px 10px #285a9f;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: #0d0f1b;
+      border: solid 3px #101010
+    }
+    
+    #maleButton {
+      border: solid 2px #7b8da5;
+      border-radius: 35px 0px 0px 5px;
+    }
+    #maleButton:hover {
+      background-color: #8f0d56;
+      box-shadow: inset 0px 0px 10px #ffffff;
+      border-color: #fafafa;
+      color: #fafafa;
+    }
+    #maleButton:active {
+      background-color: #27a1e3;
+      box-shadow: inset 0px 0px 10px #ffffff;
+      border-color: #fafafa;
+      color: #8ff2ff;
+    }
+    #femaleButton {
+      border: solid 2px #7b8da5;
+    }
+    #femaleButton:hover {
+      background-color: #27a1e3;
+      box-shadow: inset 0px 0px 10px #ffffff;
+      border-color: #fafafa;
+      color: #fafafa;
+    }
+    #femaleButton:active {
+      background-color: #27a1e3;
+      box-shadow: inset 0px 0px 10px #ffffff;
+      border-color: #fafafa;
+      color: #8ff2ff;
+    }
+    #otherButton {
+      border: solid 2px #7b8da5;
+      border-radius: 0px 35px 5px 0px;
+    }
+    #otherButton:hover {
+      background-color: #27a1e3;
+      box-shadow: inset 0px 0px 10px #ffffff;
+      border-color: #fafafa;
+      color: #fafafa;
+    }
+    #otherButton:active {
+      background-color: #27a1e3;
+      box-shadow: inset 0px 0px 10px #ffffff;
+      border-color: #fafafa;
+      color: #8ff2ff;
+    }
+    
+    
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-evenly;
+    }
 
