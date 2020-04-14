@@ -6,19 +6,30 @@
     display: flex;
     justify-content: center;
     color: yellow;
+    font-family: "Righteous";
   }
   
   .container {
     display: flex;
     color:yellow;
   }
+
+  h1 {
+    font-family: "Righteous";
+    padding-bottom: 3rem;
+    text-decoration: underline;
+  }
   
   .shipView {
+    padding-left: 6rem;
+    padding-top: 13rem;
+    align-items: center;
   
   }
   
   .nav {
-    border: solid 2px blue;
+    border: solid 2px #2c6159;
+    border-radius: 10px;
     padding: 1rem;
     background-color: black;
   }
@@ -26,11 +37,12 @@
   a {
     text-decoration: none;
     font-size: 1.25rem;
-    color: yellow;
+    color: #ca3c10;
   }
   
   li {
     list-style-type: none;
+    font-family: "Righteous";
     
   }
 
