@@ -53,7 +53,6 @@ function populateDOM(characters) {
     gallery.appendChild(personAnchor)
   })
 }
-
 populateDOM(people)
 
 
