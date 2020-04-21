@@ -48,7 +48,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: white;
+  color: #c05e31;
   text-align: center;
   font-size: 1rem;
   backface-visibility: hidden;
@@ -56,11 +56,12 @@ body {
 }
 
 .card__face--front {
-  background: red;
+  background-color:#870909;
+  
 }
 
 .card__face--back {
-  background: blue;
+  background:#235668;
   transform: rotateY(180deg);
 }
 .card_face ul {
