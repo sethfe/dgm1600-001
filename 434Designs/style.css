@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(to right, #122a50, #303669, #533f7f, #7a4791, #a34c9e);; 
+    position: fixed;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    font-size: 2rem; 
+    font-weight: 400;
+    
+   
+}
+
+.nav-list a {
+    display: block;
+    font-family:'Raleway', sans-serif;
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px #383838;
+    color: #fff;
+}
+
+
+
+.nav-list a:hover {
+  background: #d55534;
+}
+
+
+
+
+#welcome-section { 
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: 100vh;
+     background-image: url(../images/434\ background\ 3.png);
+     background-size: 100%;
+    }
+
+    .welcome-section img {
+      padding-bottom: 4.5rem;
+      justify-content: center;
+    }
+    #design-list {
+        display: flex;
+        justify-content: space-evenly;
+        background-color:rgb(69, 92, 112);
+    }
+    
+    #Deigns ,h2 {
+      text-align: center;
+      color: #fff0ce;
+      padding: 2rem;
+      background-color: rgb(69, 92, 112);
+      border-radius: 0.2rem solid rgb(69, 92, 112);
+    }
+    
+    
+    figcaption  {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-decoration-line: underline;
+      color: #fff0ce;
+      font-size: 2rem;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: #83b4b3;
+      }
+      
+      .contact {
+        font-size: 2.4rem;
+        text-shadow: 2px 2px 1px #097392;
+        transition: transform 0.3s ease-out;
+      }
+      
+      
+      a {
+        text-decoration: none;
+      }
+      
+      #contact a {
+          margin: 2rem;
+      }
+      
+      i {
+          font-size: 2rem; 
+          color: #fff;
+      }
+      
+      i:hover {
+        transform: translateY(5px);
+      }
