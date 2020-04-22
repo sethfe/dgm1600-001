@@ -63,6 +63,8 @@ body {
 .card__face--back {
   background:#235668;
   transform: rotateY(180deg);
+  background-image: url(../images/pokemonBsckgroundCard.jpeg);
+  back
 }
 .card_face ul {
   text-align: left;

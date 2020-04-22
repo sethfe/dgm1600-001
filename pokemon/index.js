@@ -27,6 +27,7 @@ function loadPage() {
         await getAPIData(pokemon.url).then(
           (pokeData) => {
             populatePokeCard(pokeData)
+            //console.log (pokeData)//
           }
         )
       }
@@ -56,7 +57,8 @@ function populateCardFront(pokemon) {
   cardFront.className = 'card__face card__face--front'
   
   let frontImage = document.createElement('img')
-  frontImage.src = `../images/${getImageFileName(pokemon)}.png`
+  frontImage.src = `../images/pokemonImages/${getImageFileName(pokemon)}.png`
+  console.log (getImageFileName(pokemon))
   let frontLabel = document.createElement('p') 
   frontLabel.textContent = `${pokemon.name.charAt(0).toUpperCase()}${pokemon.name.slice(1)}`
   cardFront.appendChild(frontImage)
@@ -67,9 +69,11 @@ function populateCardFront(pokemon) {
 function getImageFileName(pokemon) {
   if (pokemon.id < 10) {
     return `00${pokemon.id}`
-  } else if (pokemon.id > 9 && pokemon.id < 151) {
+  } else if (pokemon.id > 9 && pokemon.id < 100) {
     return `0${pokemon.id}`
-  } else return `pokeball`
+  } else if (pokemon.id > 99) { 
+    return `${pokemon.id}`
+  } else {return `pokeball`}
 }
 
 function populateCardBack(pokemon) {
