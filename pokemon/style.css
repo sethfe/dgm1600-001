@@ -2,11 +2,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  }
+
+  h1 {
+    font-family: "Bangers";
+    color: #30475E;
+  }
   
-}
-
-
-
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
@@ -51,19 +53,22 @@ body {
   color: #c05e31;
   text-align: center;
   font-size: 1rem;
+  font-family: "Play";
   backface-visibility: hidden;
   border-radius: 30px;
 }
 
 .card__face--front {
   background-color:#870909;
+  border: 6px solid #F0A500;
   
 }
 
 .card__face--back {
   background:#235668;
+  border: 6px solid #F0A500;
   transform: rotateY(180deg);
-  background-image: url(../images/pokemonBsckgroundCard.jpeg);
+ 
   
 }
 .card_face ul {
@@ -75,4 +80,12 @@ body {
 .logo {
   max-width: 400px;
   margin: 100px 40px;
+}
+
+button {
+  background-color: teal;
+  border: solid #F0A500;
+  border-radius: 1rem;
+  color: #F2A365;
+  
 }
