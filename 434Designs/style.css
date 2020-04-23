@@ -52,20 +52,25 @@
     }
 
     .welcome-section img {
-      padding-bottom: 4.5rem;
+      padding-bottom: 7.5rem;
+      padding-left: 2rem;
       justify-content: center;
+      align-items: center;
     }
     #design-list {
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
-        background-color:rgb(69, 92, 112);
+        align-items: center;
+        background-image: linear-gradient(to bottom, #182130, #41364b, #704b5c, #996663, #b48969);
     }
-    
-    #Deigns ,h2 {
+  
+
+    #Deigns ,h1 {
       text-align: center;
       color: #fff0ce;
       padding: 2rem;
-      background-color: rgb(69, 92, 112);
+      background-color: #182130; 
       border-radius: 0.2rem solid rgb(69, 92, 112);
     }
     
