@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    background-image: linear-gradient(to right, #122a50, #303669, #533f7f, #7a4791, #a34c9e);; 
+    background-image: linear-gradient(to right, #122a50, #303669, #533f7f, #7a4791, #a34c9e);
     position: fixed;
 }
 
@@ -34,7 +34,7 @@
 
 
 .nav-list a:hover {
-  background: #d55534;
+  background: #533f7f;
 }
 
 
@@ -65,6 +65,10 @@
         background-image: linear-gradient(to bottom, #182130, #41364b, #704b5c, #996663, #b48969);
         
     }
+
+    #design img {
+      border: solid #d7385e;
+    }
   
 
     #Deigns ,h1 {
@@ -90,7 +94,8 @@
         justify-content: center;
         width: 100%;
         flex-wrap: wrap;
-        background-color: #83b4b3;
+        background-image: linear-gradient(to right, #122a50, #303669, #533f7f, #7a4791, #a34c9e);
+        
       }
       
       .contact {
@@ -105,7 +110,7 @@
       }
       
       #contact a {
-          margin: 2rem;
+          margin: 1rem;
       }
       
       i {
