@@ -1,0 +1,23 @@
+body {
+    background-image: radial-gradient(circle, #354d74, #106486, #007a8d, #108e88, #50a07c);
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    font-family: 'Roboto Mono';
+}
+h1 {
+    font-weight: 300;
+    margin: 4vh 4vw;
+    letter-spacing: 3px;
+    color: ;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    border: solid #F0A500;
+    border-radius: 20px;
+}
+
