@@ -2,13 +2,22 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #ecf0f1;
+    background-color: #21243d;
 }
+
+h1{
+    color: #ffd082;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Girassol";
+    text-shadow: #ff7c7c 1px 1px;
+}
+
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #88e1f2;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     width: 80%;
     margin: 0 auto;
