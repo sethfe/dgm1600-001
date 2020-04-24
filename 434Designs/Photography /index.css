@@ -10,13 +10,15 @@ h1 {
     text-decoration: underline;
     font-family: "Dosis";
     color: #ffc8bd;
+    text-shadow: #ecfbfc 1px 1px;
 }
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #ffebd9;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
     width: 80%;
     margin: 0 auto;
     padding: 10px;
@@ -26,6 +28,7 @@ h1 {
     margin-bottom: 6px;
     opacity: .85;
     cursor: pointer;
+    border-radius: 5px;
 }
 .gallery-item:hover {
     opacity: 1;
