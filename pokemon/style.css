@@ -14,8 +14,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
-	max-width: 1200px;
-}
+    max-width: 1000px;
+   }
 
 .scene {
   width: 200px;
@@ -41,6 +41,10 @@ body {
   position: relative;
   
 }
+
+.card img {
+  padding-top: 4rem;
+ }
 
 .card.is-flipped {
   transform: rotateY(180deg);
@@ -87,5 +91,4 @@ button {
   border: solid #F0A500;
   border-radius: 1rem;
   color: #F2A365;
-  
-}
+  }

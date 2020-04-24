@@ -6,7 +6,13 @@ startButton.addEventListener('click', () => {
 
 let newButton = document.querySelector('#newButton')
 newButton.addEventListener('click', () => {
-  addPokemon()
+  const pokemonRect = addPokemon()
+  console.log(pokemonRect)
+  window.scrollTo({
+    top: pokemonRect.top,
+    left: pokemonRect.left,
+    behavior: 'smooth'
+  })
 })
 
 async function getAPIData(url) {
