@@ -26,8 +26,8 @@ async function getAPIData(url) {
   }
 }
 
-function loadPage() {
-  getAPIData('https://pokeapi.co/api/v2/pokemon/?&limit=150').then(
+function loadPage(offset, limit) {
+  getAPIData('https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=25').then(
     async (data) => {
       for (const pokemon of data.results) {
         await getAPIData(pokemon.url).then(
@@ -56,6 +56,7 @@ function populatePokeCard(singlePokemon) {
     pokeCard.appendChild(pokeBack)
     pokeScene.appendChild(pokeCard)
     pokeContainer.appendChild(pokeScene)
+    return pokeScene.getBoundingClientRect()
 }
 
 function populateCardFront(pokemon) {
@@ -106,31 +107,37 @@ function getPokemonMoves(pokemon, levelLearnedAt) {
   })
 }
 
+
+
 class Pokemon {
-  constructor(height, weight, name, abilities, moves) {
+  constructor(height, weight, name, abilities, moves, type) {
     this.height = height
     this.weight = weight
     this.name = name
     this.abilities = abilities
     this.moves = moves
+    this.type = type
     this.id = 900
   }
 }
 
 function addPokemon() {
-  let newPokemon = new Pokemon(50, 25, 'Thoremon', [
+  let newPokemon = new Pokemon(50, 25, 'Squirtle Squad', [
     {
       ability:
-        { name: 'Thunder Belly' }
+        { name: 'Swagger' }
     },
     {  ability:
-        { name: 'Lightining Fingers' }
+        { name: 'Eating' }
+    },
+    {   ability: 
+      { name: 'Shades on' }
     }
   ],
     [
       {
         move: {
-          name: "Breaking-Wind"
+          name: "Squad Goals"
         },
         version_group_details: [
           {
@@ -139,5 +146,5 @@ function addPokemon() {
         ]
       }
     ])
-  populatePokeCard(newPokemon)
+  return populatePokeCard(newPokemon)
 }

@@ -1,28 +1,32 @@
+
+
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: grid;
   align-items: center;
   }
 
   h1 {
     font-family: "Bangers";
+    font-size: 4rem;
     color: #30475E;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
   }
   
 .pokeContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
    }
 
 .scene {
   width: 200px;
   height: 260px;
-  border: 1px solid #CCC;
-  margin: 10px;
+  margin: 17px;
   perspective: 600px;
-  border-radius: 30px;
+  display: flex;
+  
 }
 
 body {
@@ -41,9 +45,11 @@ body {
   
 }
 
-.card img {
+.card__face img {
   padding-top: 4rem;
- }
+  
+}
+
 
 .card.is-flipped {
   transform: rotateY(180deg);
@@ -53,32 +59,41 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  color: #c05e31;
   text-align: center;
-  font-size: 1rem;
-  font-family: "Play";
+  font-size: 1.5rem;
+  font-family: "Bangers";
+  color: #2b580c;
   backface-visibility: hidden;
-  border-radius: 30px;
+ 
+  
+  
 }
 
 .card__face--front {
-  background-color:#870909;
-  border: 6px solid #F0A500;
+  background-color:#ff5722;
   
-  
-}
+  border: 8px solid #16817a;
+  border-radius: 15px;
+  }
 
 .card__face--back {
-  background:#235668;
-  border: 6px solid #F0A500;
+  background:#16817a;
+  border: 8px solid #F0A500;
+  border-radius: 15px;
   transform: rotateY(180deg);
- 
-  
-}
-.card_face ul {
+ }
+
+.card__face ul {
+  padding-top: 3rem;
+  box-sizing: border-box;
   text-align: left;
-  list-style-type: square;
+  text-decoration: underline dotted yellow;
+  color: #ff5722;
+  font-size: 1.5rem;
+  font-family: "Bangers";
+  padding-left: 4rem;
 }
+
 
 
 .logo {
@@ -87,8 +102,14 @@ body {
 }
 
 button {
+  font-size: larger;
   background-color: teal;
   border: solid #F0A500;
-  border-radius: 1rem;
+  border-radius: 15px;
   color: #F2A365;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 2rem ;
+  margin-top: 3rem;
   }
+
