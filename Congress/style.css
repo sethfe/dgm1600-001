@@ -1,8 +1,66 @@
+
+
+
+header {
+    background-image: url(../images/Banner.jpg);
+    background-repeat: repeat-x;
+    border: solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Courgette";
+    color: #c02739;
+    font-size:  1.3rem;
+}
+
+body {
+    background-image: radial-gradient(circle, #20aae3, #6288d1, #8963aa, #963e73, #892238);
+    
+}
+
+
+
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    border: 90px solid;
+    border-image: url(../images/DemRepub.jpeg);
+    border-image-repeat: repeat;
+    }
+
+.container img {
+    border: 6px solid #21243d;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    }
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Bellota";
+    font-size: 1.1rem;
+    color: #132743;
+    
 }
 
-.card {
-text-align: center;
+.fa-democrat {
+    color: blue;
+}
+
+.fa-republican {
+    color: red;
+}
+
+.fa-star {
+    color: rgb(131, 131, 3);
+}
+
+.progressDiv {
+    display:flex;
+    flex-direction: column;
+    margin-left: 40px;
+    font-family: "Bellota";
+    color: #132743
 }

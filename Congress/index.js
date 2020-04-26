@@ -1,6 +1,5 @@
 import { senators } from '../data/senators.js'
 
-// this is all about filter, map, reduce
 
 const container = document.querySelector('.container')
 
@@ -26,17 +25,42 @@ function simplifiedSenators(senatorArray) {
 function populateContainer(smallSenatorsArray) {
     return smallSenatorsArray.forEach(senator => {
         
+        let senDiv = document.createElement('div')
         let senFigure = document.createElement('figure')
         let figImg = document.createElement('img')
         let figCaption = document.createElement('figcaption')
+        let partyIcon = document.createElement('i')
+
+        if (senator.party === 'D') partyIcon.className = 'fas fa-democrat'
+        if (senator.party === 'R') partyIcon.className = 'fas fa-republican'
+        if (senator.party === 'ID') partyIcon.className = 'fas fa-star'
 
         figImg.src = senator.imgURL
         figCaption.textContent = senator.name
 
+        figCaption.appendChild(partyIcon)
         senFigure.appendChild(figImg)
         senFigure.appendChild(figCaption)
-        container.appendChild(senFigure)
+        senDiv.appendChild(senFigure)
+        senDiv.appendChild(progressBars(senator))
+        container.appendChild(senDiv)
     })
+}
+
+function progressBars(senator) {
+    let progressDiv = document.createElement('div')
+    progressDiv.className = 'progressDiv'
+    let seniorityLabel = document.createElement('label')
+    seniorityLabel.for = 'seniority'
+    seniorityLabel.textContent = 'Seniority'
+    let seniorityBar = document.createElement('progress')
+    seniorityBar.id = 'seniority'
+    seniorityBar.max = 100
+    seniorityBar.value = parseInt((senator.seniority / mostSeniority.seniority) * 100)
+
+    progressDiv.appendChild(seniorityLabel)
+    progressDiv.appendChild(seniorityBar)
+    return progressDiv
 }
 
 const republicans = filterSenators('party', 'R')
@@ -53,11 +77,6 @@ const mostMissedVotes = simplifiedSenators(senators).reduce((acc, senator) => {
 }
 )
 
-/* const loyalArray = simplifiedSenators(senators).map(senator => {
-    if (senator.votesWithPartyPct === 100) {
-        return senator
-    }
-}) */
 
 let loyalArray = []
 
@@ -69,8 +88,7 @@ let loyalArray = []
 })
 
 console.log(mostSeniority)
-console.log(loyalArray)
-console.log(mostMissedVotes)
+//console.log(loyalArray)
+//console.log(mostMissedVotes)
 
-populateContainer(simplifiedSenators(republicans))
-
+populateContainer(simplifiedSenators(senators))
