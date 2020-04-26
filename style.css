@@ -53,7 +53,7 @@ display: flex;
 h1 {
   text-shadow: 2px 2px 1px #000;
     color: #fff0ce;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Raleway', sans-serif;
     padding-bottom: 2rem;
     text-align: center;
@@ -75,6 +75,7 @@ h3 {
 
 #project-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color:rgb(69, 92, 112);
 }
@@ -105,7 +106,7 @@ text-decoration-line: underline;
 }
 
 .contact {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-shadow: 2px 2px 1px #097392;
   transition: transform 0.3s ease-out;
 }
@@ -120,9 +121,11 @@ a {
 }
 
 i {
-    font-size: 2rem; 
     color: #fff;
 }
+
+
+
 
 i:hover {
   transform: translateY(5px);
