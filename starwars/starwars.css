@@ -1,6 +1,8 @@
 :root {
     box-sizing: border-box;
     background-color: #31303a;
+    background-image: url(../images/starWarsBackground.jpeg);
+    background-size: 100%;
     }
 
     h1 {

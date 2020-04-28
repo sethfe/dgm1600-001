@@ -4,6 +4,7 @@ import { removeChildren, getLastNumber } from '../utils.js'
 
 let gallery = document.querySelector('.gallery')
 
+
 const maleCharacters = people.filter(person => person.gender === 'male')
 
 const femaleCharacters = people.filter(person => person.gender === 'female')
@@ -39,6 +40,9 @@ function populateDOM(characters) {
     personAnchor.href = '#'
     let personImg = document.createElement('img')
     personImg.src = `https://starwars-visualguide.com/assets/img/characters/${imageNum}.jpg`
+   
+    
+
 
     personImg.addEventListener('error', event => {
       personImg.hidden = true
@@ -51,6 +55,7 @@ function populateDOM(characters) {
 
     personAnchor.appendChild(personImg)
     gallery.appendChild(personAnchor)
+   
   })
 }
 populateDOM(people)
